@@ -8,14 +8,23 @@
 
 function spiceMustFlow(startingYield){
     let day = 0;
-    let spicesExtracted = 0;
-    while(startingYield >= 100){
+    let totalSpice = 0;
+    let mineSpiceForDay = 0;
+    let crewConsume = 26;
+    for(let i = startingYield; i > 0; i-=10){
+        if (i < 100 ) {
+            if (day === 0) {
+                totalSpice;
+            } else {
+                totalSpice -= crewConsume;
+            }
+            break;
+        }
         day++;
-        spicesExtracted += startingYield - 26;
-        startingYield -= 10;
+        mineSpiceForDay = i - crewConsume;
+        totalSpice += mineSpiceForDay;
     }
-    day !== 0 ? spicesExtracted -= 26 : spicesExtracted;
-
     console.log(day);
-    console.log(spicesExtracted);
+    console.log(totalSpice);
 }
+
