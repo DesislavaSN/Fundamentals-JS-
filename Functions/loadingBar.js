@@ -3,12 +3,12 @@
 function loadingBar(num) {
     let charCodeProc = String.fromCharCode(37);
     let charCodePoint = String.fromCharCode(46);
-    let res = "";
+    let procentRes = "";
     let pointRes = "";
     for (let i = 10; i <= num; i += 10) {
-        res += charCodeProc;
+        procentRes += charCodeProc;
     }
-    // console.log(charCodeProc);
+    // console.log(procentRes);
  
     for (let k = num; k < 100; k += 10) {
         pointRes += charCodePoint;
@@ -16,10 +16,10 @@ function loadingBar(num) {
     // console.log(pointRes);
  
     if (num < 100) {
-        console.log(`${num}% [${res}${pointRes}]`);
+        console.log(`${num}% [${procentRes}${pointRes}]`);
         console.log("Still loading...");
     } else {
         console.log(`${num}% Completed!`);
-        console.log(`[${res}]`);
+        console.log(`[${procentRes}]`);
     }
 }
