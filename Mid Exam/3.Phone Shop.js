@@ -1,4 +1,4 @@
-//3.  phone Shop (100 points):
+//3.  phone Shop
 
 function phoneShop(input){
     let phones = input.shift().split(", ");
