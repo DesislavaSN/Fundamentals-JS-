@@ -1,4 +1,4 @@
-//2. coffe lover (100 points):
+//2. coffe lover
 
 function coffeLover(input){
     let coffeeNames = input.shift().split(" ");
