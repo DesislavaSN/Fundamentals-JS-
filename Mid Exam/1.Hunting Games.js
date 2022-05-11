@@ -1,4 +1,4 @@
-// hunting Games 100 points
+// hunting Games 
 
 function huntingGames(input){
     let days = Number(input.shift());
